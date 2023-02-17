@@ -1,4 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+//font-family: 'Odibee Sans', cursive;
+
+
+.header {
+    z-index: 0;
+     width: 100%;
+     height: 40vw;
+     overflow: hidden;
+     position: relative;
+     top: -75px;
+   }
+
+ .slideshow {
+     margin: 0 auto;
+     position: absolute;
+     transition: ease-in-out 1s;
+     z-index: -5;
+   }
+   
+   .slideshowSlider {
+     white-space: nowrap;
+     display: flex;
+   }
+   
+   .image_wrapper {
+     display: block;
+     width: 100vw;
+     height: 100%;
+     position: relative;
+     img {
+        width: 100vw;
+        height: 50vw;
+     }
+   }
+
+   /*Slide Buttons */
+   
+   .slideshowDots {
+     width: 25vw;
+     right: 37.5vw;
+     left: 37.5vw;
+     position: absolute;
+     top: 80vh;
+     z-index: 12;
+     display: flex;
+   }
+   
+   .slideshowDot {
+     display: inline-block;
+     width: 1vw;
+     height: 2vh;
+     border-radius: 50px;
+     margin: 10px 10px;
+     background-color: rgb(255, 255, 255);
+   
+     cursor: pointer;
+     &:hover {
+         background-color: #5f5f5fb7;
+     }
+   }
+   
+   .slideshowDot.active {
+     background-color: #5f5f5fb7;
+   }
+
+   .MuiSlider-colorPrimary{
+   color: #70707060;
+   }
+
+   .MuiSlider-thumb {
+    color: white;
+    border: solid #707070 1px;
+   }
+ 

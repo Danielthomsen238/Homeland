@@ -2,15 +2,9 @@ export interface Global {
   theme: {
     colors: {
       background: string;
-      white: string;
-      purple: string;
-      darkgreen: string;
-      red: string;
-      opale: string;
-      grey: string;
-      darkgrey: string;
-      interaction: string;
-      border: string;
+      dark: string;
+      primary: string;
+      secondary: string;
     };
     breakpoints: {
       xs: string;
@@ -25,20 +19,15 @@ export interface Global {
     };
   };
   show?: boolean;
+  isOpen?: boolean;
 }
 
 export interface DefaultTheme {
   colors: {
     background: string;
-    white: string;
-    purple: string;
-    darkgreen: string;
-    red: string;
-    opale: string;
-    grey: string;
-    darkgrey: string;
-    interaction: string;
-    border: string;
+    dark: string;
+    primary: string;
+    secondary: string;
   };
   breakpoints: {
     xs: string;
@@ -52,4 +41,8 @@ export interface DefaultTheme {
     border: string;
   };
   show?: boolean;
+}
+
+export interface ReviewProps {
+  show: boolean;
 }

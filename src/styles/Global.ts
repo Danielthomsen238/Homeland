@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import { Global } from "../../types/interfaces/StylesInterface";
+import { Global } from "../../interfaces/StylesInterface";
 
 export const GlobalStyles = createGlobalStyle<Global>`
-
-
 
 * {
     list-style: none;
@@ -17,14 +15,17 @@ export const GlobalStyles = createGlobalStyle<Global>`
 html, body {
     width: 100%;
     height: 100%;
+    overflow: ${(props) => (props.isOpen ? "hidden" : "auto")}
+    
 }
 
 #__next {
+    z-index: -9999;
     width: 100%;
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto minmax(100vh, auto) auto;
     gap: 5px;
     background-color: ${(props) => props.theme.colors.background};
 

@@ -1,17 +1,11 @@
-import { DefaultTheme } from "../../../types/interfaces/StylesInterface";
+import { DefaultTheme } from "../../../interfaces/StylesInterface";
 
 export const theme: DefaultTheme = {
   colors: {
-    background: "#131313",
-    white: "#ffffff",
-    purple: "#D10061",
-    darkgreen: "#0A1D1C",
-    red: "#FF003D",
-    opale: "#2C3737",
-    grey: "#AFAFAF",
-    darkgrey: "#393939",
-    interaction: "#00F9B6",
-    border: "#1F5E5B",
+    background: "#fff",
+    dark: "#000000",
+    primary: "#fed9c9",
+    secondary: "#af7627",
   },
   breakpoints: {
     xs: "320px",
